@@ -1,4 +1,73 @@
-#heading {
+.header {
+  display: flex;
+  height: 200spx;
+  justify-content: space-between;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #bc3a31;
+}
+.body {
+  background-color: #f0ffff;
+  color: black;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  background-color: #fdfbd4;
+}
+
+.nav-items > ul {
+  display: flex;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0px 20;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+.res-card {
+  background-color: #ffffff;
+  width: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 7px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restro-image {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+
+.res-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 156px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.res-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.res-details {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.res-rating {
+  font-weight: bold;
   color: red;
-  background-color: azure;
+}
+.res-timing {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
 }
